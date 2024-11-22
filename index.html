@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Viewer and Downloader</title>
+    <link rel="icon" type="image/png" href="Images/Logo/logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="password-screen" class="password-container">
+        <div class="lock-icon">&#128274;</div> <!-- Lock icon as graphic -->
+        <h1>Enter Password</h1>
+        <input type="password" id="password" placeholder="Enter Password">
+        <button id="submit-password">Enter</button>
+        <p id="error-message" class="error-message">Incorrect password, please try again.</p>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content" class="container hidden">
+        <h1>File Viewer and Downloader</h1>
+        <ul class="file-list">
+            <li>
+                <span>File 1: Disaster Management</span> <span class="file-type">(PDF)</span>
+                <div class="button-group">
+                    <a href="files/Disaster Management.pdf" target="_blank">View</a>
+                    <a href="files/Disaster Management.pdf" download>Download</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

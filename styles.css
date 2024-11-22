@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #bb86fc; /* Light purple color for headings */
+    font-size: 2em; /* Larger heading */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e; /* Slightly lighter dark background for container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+}
+
+.file-list li {
+    padding: 10px;
+    margin: 10px 0;
+    background: #292929; /* Dark background for list items */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.button-group {
+    display: flex; /* Flexbox to arrange buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.button-group a {
+    display: inline-block;
+    padding: 10px 15px; /* Add padding around the text */
+    background-color: #333; /* Darker button background */
+    color: #bb86fc; /* Button text color */
+    text-decoration: none;
+    border: 2px solid #bb86fc; /* Border around each button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, border-color 0.3s;
+    font-size: 1em; /* Adjust font size for buttons */
+}
+
+.button-group a:hover {
+    background-color: #3700b3; /* Darker background on hover */
+    border-color: #3700b3; /* Change border color on hover */
+}
+
+.file-type {
+    font-size: 0.9em;
+    color: #808080; /* Gray color for the file type */
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Reduce heading size on mobile */
+    }
+
+    .container {
+        padding: 10px; /* Less padding on mobile */
+    }
+
+    .file-list li {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .button-group {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Ensure buttons take full width */
+        margin-top: 10px;
+    }
+
+    .button-group a {
+        padding: 8px; /* Adjust padding for smaller screens */
+        font-size: 0.9em; /* Adjust button font size */
+        text-align: center; /* Center align button text */
+    }
+
+    .file-list span {
+        font-size: 1em; /* Adjust file name text size */
+    }
+
+    .file-type {
+        font-size: 0.85em; /* Adjust file type text size */
+        margin-left: 0; /* Remove margin on mobile */
+    }
+}
+/* Password Screen */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e1e; /* Dark background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.lock-icon {
+    font-size: 4em;
+    color: #bb86fc; /* Light purple lock icon */
+    margin-bottom: 20px;
+}
+
+.password-container h1 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+}
+
+.password-container input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #bb86fc;
+    border-radius: 5px;
+    background-color: #292929; /* Input background */
+    color: #e0e0e0;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.password-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #bb86fc;
+    background-color: #333;
+    border: 2px solid #bb86fc;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.password-container button:hover {
+    background-color: #3700b3; /* Darker purple on hover */
+    border-color: #3700b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: #ff4d4d;
+    display: none;
+    margin-top: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
