@@ -3,7 +3,7 @@ document.getElementById('submit-password').addEventListener('click', function() 
     const errorMessage = document.getElementById('error-message');
     
     // Set your password here
-    const correctPassword = 'Password'; // Change this to the password you want
+    const correctPassword = 'shadow'; // Change this to the password you want
 
     if (password === correctPassword) {
         document.getElementById('password-screen').style.display = 'none'; // Hide password screen
@@ -19,3 +19,4 @@ document.getElementById('password').addEventListener('keypress', function(event)
         document.getElementById('submit-password').click();
     }
 });
+
